@@ -1,16 +1,18 @@
-#Clear View 
+# Project Name: Clear View
 
-## User Branch Information
+This project is dedicated to managing and improving the workflow of Clear View, a clinic specializing in eye care services. The team members are assigned specific roles to ensure the project covers all aspects, from patient interaction to technical maintenance and administrative functions.
 
-The following names are included in the user branch:
+## Team Assignments
 
-- **Osini**
-- **Thamodani**
-- **Senesh**
-- **Sheran**
-- **Isira**
-- **Dhanushka**
+- **Osini**: Inventory / Finance
+- **Thamodani**: Assistant / Finance
+- **Senesh**: Optometrist Doctor / Ophthalmologist Doctor
+- **Sheran**: Technician
+- **Isira**: Admin
+- **Dhanushka**: Receptionist
 
----
+Each team member will focus on their designated areas to streamline the development process and ensure the Clear View project meets all operational needs.
 
-Feel free to contribute or update this list as necessary.
+## Git Branches
+
+When adding each person to the GitHub repository, a branch has been created for each team member using their name. This allows them to work on their specific assignments separately, ensuring organized and structured collaboration.
