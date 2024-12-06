@@ -6,7 +6,6 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import java.lang.reflect.Method;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -207,7 +206,7 @@ public class MainDashboard extends javax.swing.JFrame {
         jLabel1.setText("Dashboard");
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/Home.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/settings.png"))); // NOI18N
 
         jPanel4.setBackground(new java.awt.Color(33, 33, 36));
 
