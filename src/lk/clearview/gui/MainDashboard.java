@@ -16,7 +16,7 @@ import javax.swing.UIManager;
 
 /**
  *
- * @author USER
+ * @author EnovateX Team
  */
 public class MainDashboard extends javax.swing.JFrame {
 

@@ -8,7 +8,7 @@ import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 
 /**
  *
- * @author USER
+ * @author EnovateX Team
  */
 public class DoctorLogin extends javax.swing.JFrame {
 
