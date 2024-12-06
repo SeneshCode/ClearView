@@ -11,11 +11,14 @@
 
 ## Links
 
-- [Project GitHub Repository](https://github.com/SeneshCode/ClearView)
-- [Project Mind Map](https://mm.tt/app/map/3457483889?t=ZOqZKnLtl9)
-- [Project Presentation](https://1drv.ms/p/c/66e090791e03c55b/EYpLuax2UmhPtJynK-NfDrwBPyFsAGkT1rT4Odi6qvwKIA?e=AsEtzi)
-- [Activity Diagram](https://online.visual-paradigm.com/share.jsp?id=333237333433342d35)
-
+- GitHub - [Project GitHub Repository](https://github.com/SeneshCode/ClearView)
+- MindMap - [Project Mind Map](https://mm.tt/app/map/3457483889?t=ZOqZKnLtl9)
+- Presentation - [Project Presentation](https://1drv.ms/p/c/66e090791e03c55b/EYpLuax2UmhPtJynK-NfDrwBPyFsAGkT1rT4Odi6qvwKIA?e=AsEtzi)
+- Activity Diagram - [Activity Diagram](https://online.visual-paradigm.com/share.jsp?id=333237333433342d35)
+- Project proposal - [Project proposal ClearView](https://1drv.ms/w/s!AlZVGvNYSWtljn1A8Oclivr3FLpL?e=zLqrSM)
+- Track Tasks - [Track Project Tasks](https://docs.google.com/spreadsheets/d/16YhA8w9VYWCigiyo6h95EXaUB0WBxx84EmUaNq9X16A/edit?gid=1919180471#gid=1919180471)
+- Icon Site - [Icons](https://icons8.com/icons/set/icons)
+- SVG Site - [Storyset](https://storyset.com/)
 
 ## Dashboard Slide Bar Icon size : 
   - width: 22 pixels
