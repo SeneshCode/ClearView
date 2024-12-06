@@ -18,7 +18,7 @@ import javax.swing.UIManager;
  *
  * @author USER
  */
-public class OphthalmologistDashboard extends javax.swing.JFrame {
+public class MainDashboard extends javax.swing.JFrame {
 
     private static JPanel[] panelsToggle = new JPanel[5];
     private static JPanel[] panelsToggleStyle = new JPanel[5];
@@ -33,7 +33,7 @@ public class OphthalmologistDashboard extends javax.swing.JFrame {
     private static Color bgColor;
     private static ImageIcon themeIcon;
 
-    public OphthalmologistDashboard(String username, String fname, String lname) {
+    public MainDashboard(String username, String fname, String lname) {
         initComponents();
         window = this;
         this.username = fname + " " + lname;
@@ -41,7 +41,7 @@ public class OphthalmologistDashboard extends javax.swing.JFrame {
         loadStaticArrays();
         loadTheme();
         panelToggleClick(ManageBooks_panel, jPanel4);
-
+        firstStartupPanel();
         UIManager.addPropertyChangeListener(new PropertyChangeListener() {
             @Override
             public void propertyChange(PropertyChangeEvent evt) {
@@ -50,6 +50,16 @@ public class OphthalmologistDashboard extends javax.swing.JFrame {
             }
         });
         window.setIconImage(new ImageIcon(getClass().getResource("../resources/eye-35.png")).getImage());
+    }
+
+    private void firstStartupPanel() {
+//     Main Button in Dashboard
+//     මෙතැනදී තමයි ඔයාගේ panel එකට අදාල object එක හදන්න ඕන, 
+//     ඒක හදන්න ඕන පහත නිදසුනේ පෙනෙන පරිදි changeView කියන method එකට parameter සෙට් කරන තැනදී. 
+//     ( parameter සෙට් කරන තැන යනු method name එකේ වරහන් දෙක  ඇතුලතටයි ) 
+//     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
+//     example below->>>>
+//     changeView(new YourPanelName());
     }
 
     private void loadTheme() {
@@ -568,9 +578,9 @@ public class OphthalmologistDashboard extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ManageBooks_panelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panelMouseClicked
-        // Admin Dasboard
+//      මෙ method එක තුල කිසිදු code එකක් වෙනස් කිරීමට හෝ අලුතෙන් add කිරීමට ඔබට කිසිදු අවසරයක් නොමැත.
         panelToggleClick(ManageBooks_panel, jPanel4);
-//        changeView(new AdminHome());
+        firstStartupPanel();
     }//GEN-LAST:event_ManageBooks_panelMouseClicked
 
     private void ManageBooks_panelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panelMouseEntered
@@ -584,9 +594,14 @@ public class OphthalmologistDashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_ManageBooks_panelMouseExited
 
     private void ManageBooks_panel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel1MouseClicked
-        // TODO add your handling code here:
         panelToggleClick(ManageBooks_panel1, jPanel6);
-//        changeView(new AdminManageBooks(this));
+//      Button 2 in Dashboard
+//      මෙතැනදී තමයි ඔයාගේ panel එකට අදාල object එක හදන්න ඕන, 
+//      ඒක හදන්න ඕන පහත නිදසුනේ පෙනෙන පරිදි changeView කියන method එකට parameter සෙට් කරන තැනදී. 
+//     ( parameter සෙට් කරන තැන යනු method name එකේ වරහන් දෙක  ඇතුලතටයි ) 
+//     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
+//     example below->>>>
+//     changeView(new YourPanelName());
     }//GEN-LAST:event_ManageBooks_panel1MouseClicked
 
     private void ManageBooks_panel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel1MouseEntered
@@ -600,9 +615,14 @@ public class OphthalmologistDashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_ManageBooks_panel1MouseExited
 
     private void ManageBooks_panel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel2MouseClicked
-        // Manage Assistants
         panelToggleClick(ManageBooks_panel2, jPanel7);
-//        changeView(new AdminManageAssistants(this));
+//      Button 3 in Dashboard
+//      මෙතැනදී තමයි ඔයාගේ panel එකට අදාල object එක හදන්න ඕන, 
+//      ඒක හදන්න ඕන පහත නිදසුනේ පෙනෙන පරිදි changeView කියන method එකට parameter සෙට් කරන තැනදී. 
+//     ( parameter සෙට් කරන තැන යනු method name එකේ වරහන් දෙක  ඇතුලතටයි ) 
+//     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
+//     example below->>>>
+//     changeView(new YourPanelName());
     }//GEN-LAST:event_ManageBooks_panel2MouseClicked
 
     private void ManageBooks_panel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel2MouseEntered
@@ -616,10 +636,14 @@ public class OphthalmologistDashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_ManageBooks_panel2MouseExited
 
     private void ManageBooks_panel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel3MouseClicked
-        // TODO add your handling code here:
         panelToggleClick(ManageBooks_panel3, jPanel8);
-        //Manage Member
-//        changeView(new AdminManageMembers(this));
+//      Button 4 in Dashboard
+//      මෙතැනදී තමයි ඔයාගේ panel එකට අදාල object එක හදන්න ඕන, 
+//      ඒක හදන්න ඕන පහත නිදසුනේ පෙනෙන පරිදි changeView කියන method එකට parameter සෙට් කරන තැනදී. 
+//     ( parameter සෙට් කරන තැන යනු method name එකේ වරහන් දෙක  ඇතුලතටයි ) 
+//     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
+//     example below->>>>
+//     changeView(new YourPanelName());
     }//GEN-LAST:event_ManageBooks_panel3MouseClicked
 
     private void ManageBooks_panel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel3MouseEntered
@@ -633,9 +657,9 @@ public class OphthalmologistDashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_ManageBooks_panel3MouseExited
 
     private void ManageBooks_panel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel4MouseClicked
-        // Admin Button
         panelToggleClick(ManageBooks_panel4, jPanel9);
-//        changeView(new AdminSettings(this));
+//        මෙතනදී එන්නේ settings button එක ඒකට දැනට මුකුත් ඔයාලට දාන්න කියලා නැත්නම් දන්නා එපා  
+//        changeView(new YourPanelName());
     }//GEN-LAST:event_ManageBooks_panel4MouseClicked
 
     private void ManageBooks_panel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel4MouseEntered
@@ -707,11 +731,11 @@ public class OphthalmologistDashboard extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
 //        FlatAtomOneLightIJTheme.setup();
         FlatMacDarkLaf.setup();
-        UIManager.put("Button.arc", 10); // Button
-        UIManager.put("ProgressBar.arc", 10); // Progress Bar
-        UIManager.put("TextComponent.arc", 10); // JTextField, JPasswordField, etc
-        UIManager.put("CheckBox.arc", 10); // JCombo Box
-        UIManager.put("Component.arc", 10); // JCombo Box
+        UIManager.put("Button.arc", 17); // Button
+        UIManager.put("ProgressBar.arc", 17); // Progress Bar
+        UIManager.put("TextComponent.arc", 17); // JTextField, JPasswordField, etc
+        UIManager.put("CheckBox.arc", 17); // JCombo Box
+        UIManager.put("Component.arc", 17); // JCombo Box
         UIManager.put("Component.innerFocusWidth", 0); // 
 
 //        javax.swing.LookAndFeel lookAndFeel = UIManager.getLookAndFeel();
@@ -721,10 +745,9 @@ public class OphthalmologistDashboard extends javax.swing.JFrame {
 //        FlatOneDarkIJTheme.setup();
 //        FlatMaterialDesignDarkIJTheme.setup();
 //        FlatMaterialDeepOceanIJTheme.setup();
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                OphthalmologistDashboard adminDashboard = new OphthalmologistDashboard("200328712369", "senesh", "pawan");
+                MainDashboard adminDashboard = new MainDashboard("200328712369", "fName", "lName");
                 adminDashboard.setVisible(true);
             }
         });
