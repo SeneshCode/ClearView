@@ -44,3 +44,33 @@
 ```
 #0091FF
 ```
+
+## Packages Names : 
+  - Osini's package name 
+```
+Inventory 
+```
+  - Thamodani's package name 
+```
+Dispensing
+```
+  - Senesh's package name   
+```
+Doctor
+```
+  - Sheran's package name   
+```
+Technician
+```
+  - Dhanushka's package name   
+```
+Receptionist
+```
+  - Isira's package name
+```
+Admin
+```
+  - Osini and Thamodani have 1 package that name  
+```
+Finance
+```
