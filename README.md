@@ -20,30 +20,6 @@
 - Icon Site - [Icons](https://icons8.com/icons/set/icons)
 - SVG Site - [Storyset](https://storyset.com/)
 
-## Dashboard Slide Bar Icon size : 
-  - width: 22 pixels
-  - height: 22 pixels
-
-## Color Theme : 
-  - High priority: ( Green ) 
-```
-#70ad46
-```
-
-  - Middle priority: ( Yellow )
-```
-#fcc000
-```
-
-  - Danger priority: ( Red )
-```
-#FF4343
-```
-
-  - Default Priority: ( Blue ) 
-```
-#0091FF
-```
 
 ## Packages Names : 
   - Osini's package name 
@@ -74,3 +50,29 @@ Admin
 ```
 Finance
 ```
+
+## Dashboard Slide Bar Icon size : 
+  - width: 22 pixels
+  - height: 22 pixels
+
+## Color Theme : 
+  - High priority: ( Green ) 
+```
+#70ad46
+```
+
+  - Middle priority: ( Yellow )
+```
+#fcc000
+```
+
+  - Danger priority: ( Red )
+```
+#FF4343
+```
+
+  - Default Priority: ( Blue ) 
+```
+#0091FF
+```
+
