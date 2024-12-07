@@ -24,31 +24,31 @@
 ## Packages Names : 
   - Osini's package name 
 ```
-Inventory 
+inventory 
 ```
   - Thamodani's package name 
 ```
-Dispensing
+dispensing
 ```
   - Senesh's package name   
 ```
-Doctor
+doctor
 ```
   - Sheran's package name   
 ```
-Technician
+technician
 ```
   - Dhanushka's package name   
 ```
-Receptionist
+receptionist
 ```
   - Isira's package name
 ```
-Admin
+admin
 ```
   - Osini and Thamodani have 1 package that name  
 ```
-Finance
+finance
 ```
 
 ## Dashboard Slide Bar Icon size : 
