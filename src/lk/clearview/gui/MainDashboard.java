@@ -468,6 +468,7 @@ public class MainDashboard extends javax.swing.JFrame {
             .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jPanel17.setBackground(new java.awt.Color(24, 24, 28));
         jPanel17.setMaximumSize(new java.awt.Dimension(32767, 58));
         jPanel17.setMinimumSize(new java.awt.Dimension(0, 57));
         jPanel17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
