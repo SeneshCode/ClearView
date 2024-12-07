@@ -21,6 +21,31 @@
 - SVG Site - [Storyset](https://storyset.com/)
 
 
+## Dashboard Slide Bar Icon size : 
+  - width: 22 pixels
+  - height: 22 pixels
+
+## Color Theme : 
+  - High priority: ( Green ) 
+```
+#70ad46
+```
+
+  - Middle priority: ( Yellow )
+```
+#fcc000
+```
+
+  - Danger priority: ( Red )
+```
+#FF4343
+```
+
+  - Default Priority: ( Blue ) 
+```
+#0091FF
+```
+
 ## Packages Names : 
   - Osini's package name 
 ```
@@ -51,28 +76,24 @@ admin
 finance
 ```
 
-## Dashboard Slide Bar Icon size : 
-  - width: 22 pixels
-  - height: 22 pixels
 
-## Color Theme : 
-  - High priority: ( Green ) 
-```
-#70ad46
-```
+## Method of set dashboard names
+ - we must call ```setNameofDashboards()``` method at constructor.
+```java
+    private void setNameofDashboards(){
+//      name of 1st Dashboard 
+        jLabel1.setText("");
 
-  - Middle priority: ( Yellow )
-```
-#fcc000
-```
+//      name of 2nd Dashboard 
+        jLabel6.setText("");
 
-  - Danger priority: ( Red )
-```
-#FF4343
-```
+//      name of 3rd Dashboard 
+        jLabel10.setText("");
 
-  - Default Priority: ( Blue ) 
-```
-#0091FF
-```
+//      name of 4th Dashboard 
+        jLabel12.setText("");
 
+//      name of 5th Dashboard
+        jLabel14.setText("");
+    }
+```
