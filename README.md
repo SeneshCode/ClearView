@@ -43,7 +43,7 @@
 
   - Default Priority: ( Blue ) 
 ```
-#0091FF
+#0360FF
 ```
 
 ## Packages Names : 
