@@ -34,7 +34,7 @@
 
   - Middle priority: ( Yellow )
 ```
-#fcc000
+#E1AC00
 ```
 
   - Danger priority: ( Red )
