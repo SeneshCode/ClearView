@@ -31,20 +31,32 @@
 ```
 #16A34A
 ```
+```
+[22,163,74]
+```
 
   - Middle priority: ( Yellow )
 ```
 #E1AC00
+```
+```
+[225,172,0]
 ```
 
   - Danger priority: ( Red )
 ```
 #FF4343
 ```
+```
+[255,67,67]
+```
 
   - Default Priority: ( Blue ) 
 ```
 #0360FF
+```
+```
+[3,96,255]
 ```
 
 ## Packages Names : 
