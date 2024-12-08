@@ -29,7 +29,7 @@
 ## Color Theme : 
   - High priority: ( Green ) 
 ```
-#70ad46
+#16A34A
 ```
 
   - Middle priority: ( Yellow )
