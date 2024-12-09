@@ -26,6 +26,16 @@
   - width: 22 pixels
   - height: 22 pixels
 
+## Margin of JFrame
+  - horizontal margin : 12
+  - vertical margin : 12
+## Margin of Panel 
+  - horizontal margin : 12
+  - vertical margin : 12
+## Margin of a Panel within a panel 
+  - horizontal margin : 6
+  - vertical margin : 6
+
 ## Color Theme : 
   - High priority: ( Green ) 
 ```
