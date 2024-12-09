@@ -13,6 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.LookAndFeel;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
+import lk.clearview.panel.technician.ManageFrameAndLensPrescriptions;
 
 /**
  *
@@ -79,6 +80,7 @@ public class TechnicianDashboard extends javax.swing.JFrame {
 //     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
 //     example below->>>>
 //     changeView(new YourPanelName());
+        changeView(new ManageFrameAndLensPrescriptions());
     }
 
     private void loadTheme() {
