@@ -750,11 +750,11 @@ public class AdminDashboard extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
 //        FlatAtomOneLightIJTheme.setup();
         FlatMacDarkLaf.setup();
-        UIManager.put("Button.arc", 17); // Button
-        UIManager.put("ProgressBar.arc", 17); // Progress Bar
-        UIManager.put("TextComponent.arc", 17); // JTextField, JPasswordField, etc
-        UIManager.put("CheckBox.arc", 17); // JCombo Box
-        UIManager.put("Component.arc", 17); // JCombo Box
+        UIManager.put("Button.arc", 10); // Button
+        UIManager.put("ProgressBar.arc", 10); // Progress Bar
+        UIManager.put("TextComponent.arc", 10); // JTextField, JPasswordField, etc
+        UIManager.put("CheckBox.arc", 10); // JCombo Box
+        UIManager.put("Component.arc", 10); // JCombo Box
         UIManager.put("Component.innerFocusWidth", 0); // 
 
 //        javax.swing.LookAndFeel lookAndFeel = UIManager.getLookAndFeel();
@@ -766,7 +766,7 @@ public class AdminDashboard extends javax.swing.JFrame {
 //        FlatMaterialDeepOceanIJTheme.setup();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                AdminDashboard adminDashboard = new AdminDashboard("200328712369", "fName", "lName");
+                AdminDashboard adminDashboard = new AdminDashboard("200429722170", "fName", "lName");
                 adminDashboard.setVisible(true);
             }
         });
