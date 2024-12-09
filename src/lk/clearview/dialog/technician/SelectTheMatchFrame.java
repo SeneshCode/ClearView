@@ -5,6 +5,7 @@
 package lk.clearview.dialog.technician;
 
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -166,6 +167,11 @@ public class SelectTheMatchFrame extends javax.swing.JDialog {
         jButton1.setMaximumSize(new java.awt.Dimension(76, 26));
         jButton1.setMinimumSize(new java.awt.Dimension(76, 26));
         jButton1.setPreferredSize(new java.awt.Dimension(76, 26));
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
 
         jTextField1.setText("Search frame using frame ID");
         jTextField1.setBorder(jComboBox1.getBorder());
@@ -336,6 +342,10 @@ public class SelectTheMatchFrame extends javax.swing.JDialog {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments

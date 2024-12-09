@@ -14,6 +14,7 @@ import javax.swing.LookAndFeel;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import lk.clearview.panel.technician.ManageFrameAndLensPrescriptions;
+import lk.clearview.panel.technician.ManageProduct;
 
 /**
  *
@@ -51,11 +52,11 @@ public class TechnicianDashboard extends javax.swing.JFrame {
             }
         });
         window.setIconImage(new ImageIcon(getClass().getResource("../../resources/eye-35.png")).getImage());
-        
+
         setNameofDashboards();
     }
-    
-        private void setNameofDashboards(){
+
+    private void setNameofDashboards() {
 //      name of 1st Dashboard 
         jLabel1.setText("Manage Order");
 
@@ -620,6 +621,7 @@ public class TechnicianDashboard extends javax.swing.JFrame {
 //     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
 //     example below->>>>
 //     changeView(new YourPanelName());
+        changeView(new ManageProduct());
     }//GEN-LAST:event_ManageBooks_panel1MouseClicked
 
     private void ManageBooks_panel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel1MouseEntered

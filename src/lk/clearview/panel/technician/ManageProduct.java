@@ -8,12 +8,12 @@ package lk.clearview.panel.technician;
  *
  * @author shera
  */
-public class ManageFrameAndLensPrescriptions extends javax.swing.JPanel {
+public class ManageProduct extends javax.swing.JPanel {
 
     /**
-     * Creates new form ManageFrameAndLensPrescriptions
+     * Creates new form ManageProduct
      */
-    public ManageFrameAndLensPrescriptions() {
+    public ManageProduct() {
         initComponents();
     }
 
@@ -36,9 +36,12 @@ public class ManageFrameAndLensPrescriptions extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
+        setPreferredSize(new java.awt.Dimension(761, 521));
+        setRequestFocusEnabled(false);
+
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/technician/icons8-create-order-22 (1).png"))); // NOI18N
-        jLabel1.setText("Manage Order");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/technician/icons8-product-22.png"))); // NOI18N
+        jLabel1.setText("Manage Product");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -60,25 +63,35 @@ public class ManageFrameAndLensPrescriptions extends javax.swing.JPanel {
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pending", "In Progress", "Completed", "Successfully Delivery" }));
 
         jTextField1.setText("Search order using order ID");
-        jTextField1.setBorder(jButton1.getBorder());
         jTextField1.setPreferredSize(new java.awt.Dimension(76, 26));
 
         jButton1.setBackground(new java.awt.Color(22, 163, 74));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton1.setText("Add to product");
+        jButton1.setText("Get Action");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Order ID", "Patient ID", "Doctor ID", "Prescription ID", "Frame ID", "Order date", "Order status"
+                "Order ID", "Patient ID", "Doctor ID", "Prescription ID", "Frame ID", "Order date", "Order status", "Total amount", "Paid amount"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(0).setResizable(false);
+            jTable1.getColumnModel().getColumn(1).setResizable(false);
+            jTable1.getColumnModel().getColumn(2).setResizable(false);
+            jTable1.getColumnModel().getColumn(3).setResizable(false);
+            jTable1.getColumnModel().getColumn(4).setResizable(false);
+            jTable1.getColumnModel().getColumn(5).setResizable(false);
+            jTable1.getColumnModel().getColumn(6).setResizable(false);
+            jTable1.getColumnModel().getColumn(7).setResizable(false);
+            jTable1.getColumnModel().getColumn(8).setResizable(false);
+        }
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -93,7 +106,7 @@ public class ManageFrameAndLensPrescriptions extends javax.swing.JPanel {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 369, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 370, Short.MAX_VALUE)
                 .addGap(25, 25, 25))
         );
 
