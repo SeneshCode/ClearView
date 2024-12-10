@@ -256,7 +256,7 @@ public class OrderProductFullDetails extends javax.swing.JFrame {
         jTextField1.setText("#INVOICE001");
         jTextField1.setBorder(jButton3.getBorder());
 
-        jTextField2.setText("jTextField1");
+        jTextField2.setText("2024-11-28");
         jTextField2.setBorder(jButton3.getBorder());
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
