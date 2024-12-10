@@ -14,6 +14,7 @@ import javax.swing.LookAndFeel;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import lk.clearview.panel.technician.ManageFrameAndLensPrescriptions;
+import lk.clearview.panel.technician.ManageOrderProductHistory;
 import lk.clearview.panel.technician.ManageProduct;
 
 /**
@@ -643,6 +644,7 @@ public class TechnicianDashboard extends javax.swing.JFrame {
 //     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
 //     example below->>>>
 //     changeView(new YourPanelName());
+        changeView(new ManageOrderProductHistory());
     }//GEN-LAST:event_ManageBooks_panel2MouseClicked
 
     private void ManageBooks_panel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel2MouseEntered

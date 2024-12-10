@@ -4,6 +4,9 @@
  */
 package lk.clearview.panel.technician;
 
+import lk.clearview.gui.technician.AddToProduct;
+import lk.clearview.gui.technician.TechnicianDashboard;
+
 /**
  *
  * @author shera
@@ -66,6 +69,11 @@ public class ManageFrameAndLensPrescriptions extends javax.swing.JPanel {
         jButton1.setBackground(new java.awt.Color(22, 163, 74));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Add to product");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -140,6 +148,12 @@ public class ManageFrameAndLensPrescriptions extends javax.swing.JPanel {
                 .addGap(0, 0, 0))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        AddToProduct addProduct = new AddToProduct();
+        addProduct.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
