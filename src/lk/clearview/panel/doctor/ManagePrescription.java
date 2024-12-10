@@ -192,7 +192,7 @@ public class ManagePrescription extends javax.swing.JPanel {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showConfirmDialog(DoctorDashboard.window, "Are You sure", "Do you sure Delete that patient prescription?",JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showConfirmDialog(DoctorDashboard.window, "Do you sure Delete that patient prescription?","Are You sure",JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton3ActionPerformed
 
 

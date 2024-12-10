@@ -16,7 +16,7 @@ import javax.swing.UIManager;
 import lk.clearview.panel.doctor.ManagePatient;
 import lk.clearview.panel.doctor.ManagePrescription;
 import lk.clearview.panel.doctor.ProfileSettings;
-import lk.clearview.panel.doctor.ProfileSettings1;
+import lk.clearview.panel.doctor.ProfileSettings;
 import lk.clearview.panel.doctor.Schedule;
 
 /**
@@ -705,7 +705,7 @@ public class DoctorDashboard extends javax.swing.JFrame {
         panelToggleClick(ManageBooks_panel4, jPanel9);
 //        මෙතනදී එන්නේ settings button එක ඒකට දැනට මුකුත් ඔයාලට දාන්න කියලා නැත්නම් දන්නා එපා  
 //        changeView(new YourPanelName());
-        changeView(new ProfileSettings1());
+        changeView(new ProfileSettings());
     }//GEN-LAST:event_ManageBooks_panel4MouseClicked
 
     private void ManageBooks_panel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel4MouseEntered

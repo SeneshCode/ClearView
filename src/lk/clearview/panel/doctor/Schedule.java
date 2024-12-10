@@ -185,7 +185,7 @@ public class Schedule extends javax.swing.JPanel {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(DoctorDashboard.window, "Are You sure", "Do you sure delay?",JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(DoctorDashboard.window,"Do you sure delay?","Are You sure",JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -196,7 +196,7 @@ public class Schedule extends javax.swing.JPanel {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(DoctorDashboard.window, "Are You sure", "Do you sure cancel that appointment?",JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(DoctorDashboard.window,"Do you sure cancel that appointment?", "Are You sure",JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton3ActionPerformed
 
 

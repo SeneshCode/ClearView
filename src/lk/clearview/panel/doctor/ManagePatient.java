@@ -173,7 +173,7 @@ public class ManagePatient extends javax.swing.JPanel {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showConfirmDialog(DoctorDashboard.window, "Are You sure", "Do you sure posepone that appointment?",JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showConfirmDialog(DoctorDashboard.window, "Do you sure posepone that appointment?", "Are You sure",JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
@@ -187,12 +187,12 @@ public class ManagePatient extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showConfirmDialog(DoctorDashboard.window, "Are You sure", "Do you sure complete that appointment?",JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showConfirmDialog(DoctorDashboard.window, "Do you sure complete that appointment?", "Are You sure",JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showConfirmDialog(DoctorDashboard.window, "Are You sure", "Do you sure cancel that appointment?",JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showConfirmDialog(DoctorDashboard.window, "Do you sure cancel that appointment?", "Are You sure",JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton3ActionPerformed
 
 
