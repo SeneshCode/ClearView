@@ -13,6 +13,7 @@ import javax.swing.LookAndFeel;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
+
 /**
  *
  * @author EnovateX Team
@@ -58,7 +59,7 @@ public class MainDashboard extends javax.swing.JFrame {
 //     ( parameter සෙට් කරන තැන යනු method name එකේ වරහන් දෙක  ඇතුලතටයි ) 
 //     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
 //     example below->>>>
-//     changeView(new YourPanelName());
+//     changeView(new ManageSupplier());
     }
 
     private void loadTheme() {
@@ -207,6 +208,11 @@ public class MainDashboard extends javax.swing.JFrame {
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/settings.png"))); // NOI18N
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
 
         jPanel4.setBackground(new java.awt.Color(33, 33, 36));
 
@@ -722,6 +728,10 @@ public class MainDashboard extends javax.swing.JFrame {
             collaps();
         }
     }//GEN-LAST:event_jLabel28MouseClicked
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel2MouseClicked
 
     /**
      * @param args the command line arguments

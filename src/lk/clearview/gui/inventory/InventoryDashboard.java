@@ -13,6 +13,9 @@ import javax.swing.JPanel;
 import javax.swing.LookAndFeel;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
+import lk.clearview.panel.inventory.GrnAndItems;
+import lk.clearview.panel.inventory.ManageStock;
+import lk.clearview.panel.inventory.ManageSupplier;
 
 /**
  *
@@ -54,13 +57,13 @@ public class InventoryDashboard extends javax.swing.JFrame {
     }
     private void setNameofDashboards(){
 //      name of 1st Dashboard 
-        jLabel1.setText("Manage Supplier");
+        jLabel1.setText("Supplier");
 
 //      name of 2nd Dashboard 
-        jLabel6.setText("");
+        jLabel6.setText("GRN & Items");
 
 //      name of 3rd Dashboard 
-        jLabel10.setText("");
+        jLabel10.setText("Stock");
 
 //      name of 4th Dashboard 
         jLabel12.setText("");
@@ -76,7 +79,8 @@ public class InventoryDashboard extends javax.swing.JFrame {
 //     ( parameter සෙට් කරන තැන යනු method name එකේ වරහන් දෙක  ඇතුලතටයි ) 
 //     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
 //     example below->>>>
-//     changeView(new YourPanelName());
+     changeView(new ManageSupplier());
+
     }
 
     private void loadTheme() {
@@ -199,7 +203,7 @@ public class InventoryDashboard extends javax.swing.JFrame {
         jPanel13 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Clear View");
+        setTitle("Clear View - Inventry Dashboard");
         setMinimumSize(new java.awt.Dimension(930, 566));
 
         jPanel5.setBackground(new java.awt.Color(24, 24, 28));
@@ -280,7 +284,7 @@ public class InventoryDashboard extends javax.swing.JFrame {
         jLabel6.setText("Manage Patient");
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/patient.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/inventory/GRN and Items Manage.png"))); // NOI18N
 
         jPanel6.setBackground(new java.awt.Color(33, 33, 36));
 
@@ -335,7 +339,7 @@ public class InventoryDashboard extends javax.swing.JFrame {
         jLabel10.setText("Manage eye result");
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/eye search.png"))); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/inventory/manage stock.png"))); // NOI18N
 
         jPanel7.setBackground(new java.awt.Color(33, 33, 36));
 
@@ -619,7 +623,7 @@ public class InventoryDashboard extends javax.swing.JFrame {
 //     ( parameter සෙට් කරන තැන යනු method name එකේ වරහන් දෙක  ඇතුලතටයි ) 
 //     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
 //     example below->>>>
-//     changeView(new YourPanelName());
+     changeView(new GrnAndItems());
     }//GEN-LAST:event_ManageBooks_panel1MouseClicked
 
     private void ManageBooks_panel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel1MouseEntered
@@ -640,7 +644,7 @@ public class InventoryDashboard extends javax.swing.JFrame {
 //     ( parameter සෙට් කරන තැන යනු method name එකේ වරහන් දෙක  ඇතුලතටයි ) 
 //     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
 //     example below->>>>
-//     changeView(new YourPanelName());
+     changeView(new ManageStock());
     }//GEN-LAST:event_ManageBooks_panel2MouseClicked
 
     private void ManageBooks_panel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel2MouseEntered
@@ -749,11 +753,11 @@ public class InventoryDashboard extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
 //        FlatAtomOneLightIJTheme.setup();
         FlatMacDarkLaf.setup();
-        UIManager.put("Button.arc", 17); // Button
-        UIManager.put("ProgressBar.arc", 17); // Progress Bar
-        UIManager.put("TextComponent.arc", 17); // JTextField, JPasswordField, etc
-        UIManager.put("CheckBox.arc", 17); // JCombo Box
-        UIManager.put("Component.arc", 17); // JCombo Box
+        UIManager.put("Button.arc", 10); // Button
+        UIManager.put("ProgressBar.arc", 10); // Progress Bar
+        UIManager.put("TextComponent.arc", 10); // JTextField, JPasswordField, etc
+        UIManager.put("CheckBox.arc", 10); // JCombo Box
+        UIManager.put("Component.arc", 10); // JCombo Box
         UIManager.put("Component.innerFocusWidth", 0); // 
 
 //        javax.swing.LookAndFeel lookAndFeel = UIManager.getLookAndFeel();
