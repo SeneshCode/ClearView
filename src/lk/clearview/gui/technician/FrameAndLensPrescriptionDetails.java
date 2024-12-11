@@ -166,7 +166,15 @@ public class FrameAndLensPrescriptionDetails extends javax.swing.JFrame {
             new String [] {
                 "Lens item id", "Sphere min", "Sphere max", "Cylinder min", "Cylinder max", "Axis min", "Axis max", "pupillary distance min", "Pupillary distance max", "Lens type", "Material", "Price"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane2.setViewportView(jTable1);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -195,7 +203,15 @@ public class FrameAndLensPrescriptionDetails extends javax.swing.JFrame {
             new String [] {
                 "Fram ID", "Brand", "Model", "Color", "Size", "Material", "Shape", "price"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane4.setViewportView(jTable2);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);

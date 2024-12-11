@@ -224,7 +224,7 @@ public class DoctorDashboard extends javax.swing.JFrame {
         jPanel13 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Clear View");
+        setTitle("Clear View - Doctor Dashboard");
         setMinimumSize(new java.awt.Dimension(930, 566));
 
         jPanel5.setBackground(new java.awt.Color(24, 24, 28));
