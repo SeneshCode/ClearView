@@ -1,6 +1,7 @@
-package lk.clearview.gui;
+package lk.clearview.gui.doctor;
 
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
+import com.formdev.flatlaf.themes.FlatMacLightLaf;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,12 +13,17 @@ import javax.swing.JPanel;
 import javax.swing.LookAndFeel;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
+import lk.clearview.panel.doctor.ManagePatient;
+import lk.clearview.panel.doctor.ManagePrescription;
+import lk.clearview.panel.doctor.ProfileSettings;
+import lk.clearview.panel.doctor.ProfileSettings;
+import lk.clearview.panel.doctor.Schedule;
 
 /**
  *
  * @author EnovateX Team
  */
-public class MainDashboard extends javax.swing.JFrame {
+public class DoctorDashboard extends javax.swing.JFrame {
 
     private static JPanel[] panelsToggle = new JPanel[5];
     private static JPanel[] panelsToggleStyle = new JPanel[5];
@@ -32,7 +38,7 @@ public class MainDashboard extends javax.swing.JFrame {
     private static Color bgColor;
     private static ImageIcon themeIcon;
 
-    public MainDashboard(String username, String fname, String lname) {
+    public DoctorDashboard(String username, String fname, String lname) {
         initComponents();
         window = this;
         this.username = fname + " " + lname;
@@ -48,7 +54,25 @@ public class MainDashboard extends javax.swing.JFrame {
                 panelToggleClick(ManageBooks_panel4, jPanel9);
             }
         });
-        window.setIconImage(new ImageIcon(getClass().getResource("../resources/eye-35.png")).getImage());
+        window.setIconImage(new ImageIcon(getClass().getResource("../../resources/eye-35.png")).getImage());
+        setNameofDashboards();
+    }
+
+    private void setNameofDashboards() {
+//      name of 1st Dashboard 
+        jLabel1.setText("Appointment");
+
+//      name of 2nd Dashboard 
+        jLabel6.setText("Prescription");
+
+//      name of 3rd Dashboard 
+        jLabel10.setText("Schedule");
+
+//      name of 4th Dashboard 
+        jLabel12.setText("");
+
+//      name of 5th Dashboard
+        jLabel14.setText("Profile Settings");
     }
 
     private void firstStartupPanel() {
@@ -59,6 +83,7 @@ public class MainDashboard extends javax.swing.JFrame {
 //     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
 //     example below->>>>
 //     changeView(new YourPanelName());
+        changeView(new ManagePatient());
     }
 
     private void loadTheme() {
@@ -146,6 +171,24 @@ public class MainDashboard extends javax.swing.JFrame {
         SwingUtilities.updateComponentTreeUI(jPanel11);
     }
 
+    public void DarkTheme() {
+        FlatMacDarkLaf.setup();
+    }
+
+    public void LightTheme() {
+        FlatMacLightLaf.setup();
+    }
+
+    public void changeTheme() {
+        LookAndFeel theme = UIManager.getLookAndFeel();
+        if (theme.getClass().getSimpleName().equals("FlatMacLightLaf")) {
+            DarkTheme();
+        } else {
+            LightTheme();
+        }
+        loadTheme();
+    }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -203,10 +246,10 @@ public class MainDashboard extends javax.swing.JFrame {
         });
 
         jLabel1.setForeground(new java.awt.Color(0, 102, 255));
-        jLabel1.setText("Dashboard");
+        jLabel1.setText("Doctor Dashboard");
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/settings.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/doctor/manage_user_appointment.png"))); // NOI18N
 
         jPanel4.setBackground(new java.awt.Color(33, 33, 36));
 
@@ -262,7 +305,7 @@ public class MainDashboard extends javax.swing.JFrame {
         jLabel6.setText("Manage Patient");
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/patient.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/doctor/appointment.png"))); // NOI18N
 
         jPanel6.setBackground(new java.awt.Color(33, 33, 36));
 
@@ -283,8 +326,8 @@ public class MainDashboard extends javax.swing.JFrame {
             ManageBooks_panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ManageBooks_panel1Layout.createSequentialGroup()
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -317,7 +360,7 @@ public class MainDashboard extends javax.swing.JFrame {
         jLabel10.setText("Manage eye result");
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/eye search.png"))); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/doctor/schedule2.png"))); // NOI18N
 
         jPanel7.setBackground(new java.awt.Color(33, 33, 36));
 
@@ -430,7 +473,7 @@ public class MainDashboard extends javax.swing.JFrame {
         jLabel14.setText("Settings");
 
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/settings.png"))); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/doctor/settings.png"))); // NOI18N
 
         jPanel9.setBackground(new java.awt.Color(33, 33, 36));
 
@@ -602,6 +645,7 @@ public class MainDashboard extends javax.swing.JFrame {
 //     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
 //     example below->>>>
 //     changeView(new YourPanelName());
+        changeView(new ManagePrescription());
     }//GEN-LAST:event_ManageBooks_panel1MouseClicked
 
     private void ManageBooks_panel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel1MouseEntered
@@ -623,6 +667,7 @@ public class MainDashboard extends javax.swing.JFrame {
 //     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
 //     example below->>>>
 //     changeView(new YourPanelName());
+        changeView(new Schedule());
     }//GEN-LAST:event_ManageBooks_panel2MouseClicked
 
     private void ManageBooks_panel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel2MouseEntered
@@ -660,6 +705,7 @@ public class MainDashboard extends javax.swing.JFrame {
         panelToggleClick(ManageBooks_panel4, jPanel9);
 //        මෙතනදී එන්නේ settings button එක ඒකට දැනට මුකුත් ඔයාලට දාන්න කියලා නැත්නම් දන්නා එපා  
 //        changeView(new YourPanelName());
+        changeView(new ProfileSettings());
     }//GEN-LAST:event_ManageBooks_panel4MouseClicked
 
     private void ManageBooks_panel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel4MouseEntered
@@ -730,12 +776,13 @@ public class MainDashboard extends javax.swing.JFrame {
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
 //        FlatAtomOneLightIJTheme.setup();
+
         FlatMacDarkLaf.setup();
-        UIManager.put("Button.arc", 17); // Button
-        UIManager.put("ProgressBar.arc", 17); // Progress Bar
-        UIManager.put("TextComponent.arc", 17); // JTextField, JPasswordField, etc
-        UIManager.put("CheckBox.arc", 17); // JCombo Box
-        UIManager.put("Component.arc", 17); // JCombo Box
+        UIManager.put("Button.arc", 10); // Button
+        UIManager.put("ProgressBar.arc", 10); // Progress Bar
+        UIManager.put("TextComponent.arc", 10); // JTextField, JPasswordField, etc
+        UIManager.put("CheckBox.arc", 10); // JCombo Box
+        UIManager.put("Component.arc", 10); // JCombo Box
         UIManager.put("Component.innerFocusWidth", 0); // 
 
 //        javax.swing.LookAndFeel lookAndFeel = UIManager.getLookAndFeel();
@@ -747,7 +794,7 @@ public class MainDashboard extends javax.swing.JFrame {
 //        FlatMaterialDeepOceanIJTheme.setup();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                MainDashboard adminDashboard = new MainDashboard("200328712369", "fName", "lName");
+                DoctorDashboard adminDashboard = new DoctorDashboard("200328712369", "fName", "lName");
                 adminDashboard.setVisible(true);
             }
         });
