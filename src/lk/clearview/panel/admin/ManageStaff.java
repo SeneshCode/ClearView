@@ -4,6 +4,10 @@
  */
 package lk.clearview.panel.admin;
 
+import lk.clearview.dialog.admin.Register;
+import lk.clearview.dialog.admin.Update;
+import lk.clearview.gui.admin.AdminDashboard;
+
 /**
  *
  * @author acer
@@ -52,10 +56,20 @@ public class ManageStaff extends javax.swing.JPanel {
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Add User");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setBackground(new java.awt.Color(225, 172, 0));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Update User");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setBackground(new java.awt.Color(255, 67, 67));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -141,6 +155,18 @@ public class ManageStaff extends javax.swing.JPanel {
                 .addGap(12, 12, 12))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // REGISTER
+        Register register = new Register(AdminDashboard.window, true);
+        register.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // update
+        Update update = new Update(AdminDashboard.window, true);
+        update.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
