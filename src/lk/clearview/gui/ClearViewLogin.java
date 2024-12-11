@@ -4,21 +4,28 @@
  */
 package lk.clearview.gui;
 
+import com.formdev.flatlaf.extras.FlatSVGIcon;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
+import javax.swing.ImageIcon;
 
 /**
  *
  * @author EnovateX Team
  */
-public class DoctorLogin extends javax.swing.JFrame {
+public class ClearViewLogin extends javax.swing.JFrame {
 
     /**
      * Creates new form DoctorLogin
      */
-    public DoctorLogin() {
+    public ClearViewLogin() {
         initComponents();
+        this.setIconImage(new ImageIcon(getClass().getResource("../resources/eye-35.png")).getImage());
     }
 
+//    private void setSvg(){
+//        String path = getClass().getResource("../resources/login.svg").toString();
+//        jLabel1.setIcon(new FlatSVGIcon("../resources/login.svg",352,438));
+//    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -39,16 +46,16 @@ public class DoctorLogin extends javax.swing.JFrame {
         jPasswordField1 = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Clear View Doctor Dashboard");
+        setTitle("Clear View Login");
         setBackground(new java.awt.Color(22, 22, 24));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(22, 22, 24));
+        jPanel1.setMaximumSize(new java.awt.Dimension(829, 499));
+        jPanel1.setMinimumSize(new java.awt.Dimension(829, 499));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/eye-48.png"))); // NOI18N
 
@@ -56,7 +63,7 @@ public class DoctorLogin extends javax.swing.JFrame {
         jLabel7.setText("View");
 
         jLabel8.setFont(new java.awt.Font("Yu Gothic UI", 1, 36)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel8.setForeground(new java.awt.Color(3, 96, 255));
         jLabel8.setText("Clear");
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -78,22 +85,19 @@ public class DoctorLogin extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setBackground(new java.awt.Color(3, 96, 255));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton1.setText("Log In");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setMaximumSize(new java.awt.Dimension(80, 27));
+        jButton1.setMinimumSize(new java.awt.Dimension(80, 27));
 
         jPanel2.setBackground(new java.awt.Color(22, 22, 24));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Baloo", 1, 24)); // NOI18N
-        jLabel3.setText("Doctors");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 110, 40));
-
-        jLabel2.setFont(new java.awt.Font("Baloo", 1, 20)); // NOI18N
-        jLabel2.setText("Login");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 80, 40));
-
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/login.png"))); // NOI18N
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 520));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/logo2.png"))); // NOI18N
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 420, 380));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -103,7 +107,7 @@ public class DoctorLogin extends javax.swing.JFrame {
                 .addGap(65, 65, 65)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
+                        .addGap(18, 18, 18)
                         .addComponent(jLabel9)
                         .addGap(12, 12, 12)
                         .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -112,7 +116,7 @@ public class DoctorLogin extends javax.swing.JFrame {
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
                         .addGap(202, 202, 202))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
@@ -126,7 +130,7 @@ public class DoctorLogin extends javax.swing.JFrame {
                             .addComponent(jPasswordField1))
                         .addGap(10, 10, 10)))
                 .addGap(28, 28, 28)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 463, Short.MAX_VALUE)
                 .addGap(0, 0, 0))
         );
         jPanel1Layout.setVerticalGroup(
@@ -148,7 +152,7 @@ public class DoctorLogin extends javax.swing.JFrame {
                 .addGap(4, 4, 4)
                 .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
-                .addComponent(jButton1)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(132, Short.MAX_VALUE))
         );
 
@@ -156,10 +160,9 @@ public class DoctorLogin extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, 0))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -190,7 +193,7 @@ public class DoctorLogin extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new DoctorLogin().setVisible(true);
+                new ClearViewLogin().setVisible(true);
             }
         });
     }
@@ -198,8 +201,6 @@ public class DoctorLogin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

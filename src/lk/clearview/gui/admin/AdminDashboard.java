@@ -1,5 +1,6 @@
-package lk.clearview.gui;
+package lk.clearview.gui.admin;
 
+import lk.clearview.gui.*;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -12,13 +13,14 @@ import javax.swing.JPanel;
 import javax.swing.LookAndFeel;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-
+import lk.clearview.panel.admin.ManageActivities;
+import lk.clearview.panel.admin.ManageStaff;
 
 /**
  *
  * @author EnovateX Team
  */
-public class MainDashboard extends javax.swing.JFrame {
+public class AdminDashboard extends javax.swing.JFrame {
 
     private static JPanel[] panelsToggle = new JPanel[5];
     private static JPanel[] panelsToggleStyle = new JPanel[5];
@@ -33,7 +35,7 @@ public class MainDashboard extends javax.swing.JFrame {
     private static Color bgColor;
     private static ImageIcon themeIcon;
 
-    public MainDashboard(String username, String fname, String lname) {
+    public AdminDashboard(String username, String fname, String lname) {
         initComponents();
         window = this;
         this.username = fname + " " + lname;
@@ -49,9 +51,26 @@ public class MainDashboard extends javax.swing.JFrame {
                 panelToggleClick(ManageBooks_panel4, jPanel9);
             }
         });
-        window.setIconImage(new ImageIcon(getClass().getResource("../resources/eye-35.png")).getImage());
+        window.setIconImage(new ImageIcon(getClass().getResource("../../resources/eye-35.png")).getImage());
+        setNameofDashboards();
     }
+    private void setNameofDashboards(){
+//      name of 1st Dashboard 
+        jLabel1.setText("Manage Staff");
 
+//      name of 2nd Dashboard 
+        jLabel6.setText("Manage Activities");
+
+//      name of 3rd Dashboard 
+        jLabel10.setText("");
+
+//      name of 4th Dashboard 
+        jLabel12.setText("");
+
+//      name of 5th Dashboard
+        jLabel14.setText("");
+    }
+    
     private void firstStartupPanel() {
 //     Main Button in Dashboard
 //     මෙතැනදී තමයි ඔයාගේ panel එකට අදාල object එක හදන්න ඕන, 
@@ -59,7 +78,7 @@ public class MainDashboard extends javax.swing.JFrame {
 //     ( parameter සෙට් කරන තැන යනු method name එකේ වරහන් දෙක  ඇතුලතටයි ) 
 //     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
 //     example below->>>>
-//     changeView(new ManageSupplier());
+     changeView(new ManageStaff());
     }
 
     private void loadTheme() {
@@ -182,7 +201,7 @@ public class MainDashboard extends javax.swing.JFrame {
         jPanel13 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Clear View");
+        setTitle("Clear View - Admin Dashboard");
         setMinimumSize(new java.awt.Dimension(930, 566));
 
         jPanel5.setBackground(new java.awt.Color(24, 24, 28));
@@ -207,12 +226,7 @@ public class MainDashboard extends javax.swing.JFrame {
         jLabel1.setText("Dashboard");
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/settings.png"))); // NOI18N
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel2MouseClicked(evt);
-            }
-        });
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/admin/staff-22.png"))); // NOI18N
 
         jPanel4.setBackground(new java.awt.Color(33, 33, 36));
 
@@ -268,7 +282,7 @@ public class MainDashboard extends javax.swing.JFrame {
         jLabel6.setText("Manage Patient");
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/patient.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/admin/lawyer-22.png"))); // NOI18N
 
         jPanel6.setBackground(new java.awt.Color(33, 33, 36));
 
@@ -474,7 +488,6 @@ public class MainDashboard extends javax.swing.JFrame {
             .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel17.setBackground(new java.awt.Color(24, 24, 28));
         jPanel17.setMaximumSize(new java.awt.Dimension(32767, 58));
         jPanel17.setMinimumSize(new java.awt.Dimension(0, 57));
         jPanel17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -523,7 +536,7 @@ public class MainDashboard extends javax.swing.JFrame {
                 .addGap(14, 14, 14))
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -607,7 +620,7 @@ public class MainDashboard extends javax.swing.JFrame {
 //     ( parameter සෙට් කරන තැන යනු method name එකේ වරහන් දෙක  ඇතුලතටයි ) 
 //     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
 //     example below->>>>
-//     changeView(new YourPanelName());
+     changeView(new ManageActivities());
     }//GEN-LAST:event_ManageBooks_panel1MouseClicked
 
     private void ManageBooks_panel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel1MouseEntered
@@ -730,10 +743,6 @@ public class MainDashboard extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jLabel28MouseClicked
 
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel2MouseClicked
-
     /**
      * @param args the command line arguments
      */
@@ -741,11 +750,11 @@ public class MainDashboard extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
 //        FlatAtomOneLightIJTheme.setup();
         FlatMacDarkLaf.setup();
-        UIManager.put("Button.arc", 17); // Button
-        UIManager.put("ProgressBar.arc", 17); // Progress Bar
-        UIManager.put("TextComponent.arc", 17); // JTextField, JPasswordField, etc
-        UIManager.put("CheckBox.arc", 17); // JCombo Box
-        UIManager.put("Component.arc", 17); // JCombo Box
+        UIManager.put("Button.arc", 10); // Button
+        UIManager.put("ProgressBar.arc", 10); // Progress Bar
+        UIManager.put("TextComponent.arc", 10); // JTextField, JPasswordField, etc
+        UIManager.put("CheckBox.arc", 10); // JCombo Box
+        UIManager.put("Component.arc", 10); // JCombo Box
         UIManager.put("Component.innerFocusWidth", 0); // 
 
 //        javax.swing.LookAndFeel lookAndFeel = UIManager.getLookAndFeel();
@@ -757,7 +766,7 @@ public class MainDashboard extends javax.swing.JFrame {
 //        FlatMaterialDeepOceanIJTheme.setup();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                MainDashboard adminDashboard = new MainDashboard("200328712369", "fName", "lName");
+                AdminDashboard adminDashboard = new AdminDashboard("200429722170", "fName", "lName");
                 adminDashboard.setVisible(true);
             }
         });

@@ -1,5 +1,6 @@
-package lk.clearview.gui;
+package lk.clearview.gui.receptionist;
 
+import lk.clearview.gui.*;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -12,16 +13,17 @@ import javax.swing.JPanel;
 import javax.swing.LookAndFeel;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-
+import lk.clearview.panel.receptionist.ManageAppointments;
+import lk.clearview.panel.receptionist.ManagePatient;
 
 /**
  *
  * @author EnovateX Team
  */
-public class MainDashboard extends javax.swing.JFrame {
+public class ReceptionistDashboard extends javax.swing.JFrame {
 
-    private static JPanel[] panelsToggle = new JPanel[5];
-    private static JPanel[] panelsToggleStyle = new JPanel[5];
+    private static JPanel[] panelsToggle = new JPanel[3];
+    private static JPanel[] panelsToggleStyle = new JPanel[3];
 
     public static JFrame window;
 
@@ -33,7 +35,7 @@ public class MainDashboard extends javax.swing.JFrame {
     private static Color bgColor;
     private static ImageIcon themeIcon;
 
-    public MainDashboard(String username, String fname, String lname) {
+    public ReceptionistDashboard(String username, String fname, String lname) {
         initComponents();
         window = this;
         this.username = fname + " " + lname;
@@ -49,7 +51,25 @@ public class MainDashboard extends javax.swing.JFrame {
                 panelToggleClick(ManageBooks_panel4, jPanel9);
             }
         });
-        window.setIconImage(new ImageIcon(getClass().getResource("../resources/eye-35.png")).getImage());
+        window.setIconImage(new ImageIcon(getClass().getResource("../../resources/eye-35.png")).getImage());
+        setNameofDashboards();
+    }
+
+    private void setNameofDashboards() {
+//      name of 1st Dashboard 
+        jLabel1.setText("Manage Patient");
+
+//      name of 2nd Dashboard 
+        jLabel6.setText("Manege Appoinment");
+
+//      name of 3rd Dashboard 
+//        jLabel10.setText("");
+
+//      name of 4th Dashboard 
+//        jLabel12.setText("");
+
+//      name of 5th Dashboard
+        jLabel14.setText("");
     }
 
     private void firstStartupPanel() {
@@ -59,7 +79,8 @@ public class MainDashboard extends javax.swing.JFrame {
 //     ( parameter සෙට් කරන තැන යනු method name එකේ වරහන් දෙක  ඇතුලතටයි ) 
 //     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
 //     example below->>>>
-//     changeView(new ManageSupplier());
+//     changeView(new YourPanelName());
+changeView(new ManagePatient());
     }
 
     private void loadTheme() {
@@ -71,7 +92,7 @@ public class MainDashboard extends javax.swing.JFrame {
             defaultColor = new Color(243, 243, 247);
             bgColor = new Color(255, 255, 255);
             jLabel26.setForeground(Color.BLACK);
-            jPanel7.setBackground(bgColor);
+//            jPanel7.setBackground(bgColor);
             jPanel5.setBackground(bgColor);
             jPanel17.setBackground(bgColor);
         } else {
@@ -80,7 +101,7 @@ public class MainDashboard extends javax.swing.JFrame {
             defaultColor = new Color(18, 18, 22);
             bgColor = new Color(24, 24, 28);
             jLabel26.setForeground(Color.WHITE);
-            jPanel7.setBackground(bgColor);
+//            jPanel7.setBackground(bgColor);
             jPanel5.setBackground(bgColor);
             jPanel17.setBackground(bgColor);
         }
@@ -89,8 +110,8 @@ public class MainDashboard extends javax.swing.JFrame {
         jLabel29.setVisible(false);
         panelToggleHover(false, ManageBooks_panel, jPanel4);
         panelToggleHover(false, ManageBooks_panel1, jPanel6);
-        panelToggleHover(false, ManageBooks_panel2, jPanel7);
-        panelToggleHover(false, ManageBooks_panel3, jPanel8);
+//        panelToggleHover(false, ManageBooks_panel2, jPanel7);
+//        panelToggleHover(false, ManageBooks_panel3, jPanel8);
         panelToggleHover(false, ManageBooks_panel4, jPanel9);
     }
 
@@ -98,14 +119,14 @@ public class MainDashboard extends javax.swing.JFrame {
     public void loadStaticArrays() {
         panelsToggle[0] = jPanel4;
         panelsToggle[1] = jPanel6;
-        panelsToggle[2] = jPanel7;
-        panelsToggle[3] = jPanel8;
-        panelsToggle[4] = jPanel9;
+//        panelsToggle[2] = jPanel7;
+//        panelsToggle[3] = jPanel8;
+        panelsToggle[2] = jPanel9;
         panelsToggleStyle[0] = ManageBooks_panel;
         panelsToggleStyle[1] = ManageBooks_panel1;
-        panelsToggleStyle[2] = ManageBooks_panel2;
-        panelsToggleStyle[3] = ManageBooks_panel3;
-        panelsToggleStyle[4] = ManageBooks_panel4;
+//        panelsToggleStyle[2] = ManageBooks_panel2;
+//        panelsToggleStyle[3] = ManageBooks_panel3;
+        panelsToggleStyle[2] = ManageBooks_panel4;
         panelToggleClick(ManageBooks_panel, jPanel4);
     }
 
@@ -161,14 +182,6 @@ public class MainDashboard extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
-        ManageBooks_panel2 = new javax.swing.JPanel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jPanel7 = new javax.swing.JPanel();
-        ManageBooks_panel3 = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jPanel8 = new javax.swing.JPanel();
         ManageBooks_panel4 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -207,12 +220,7 @@ public class MainDashboard extends javax.swing.JFrame {
         jLabel1.setText("Dashboard");
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/settings.png"))); // NOI18N
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel2MouseClicked(evt);
-            }
-        });
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/receptionist/patient-22.png"))); // NOI18N
 
         jPanel4.setBackground(new java.awt.Color(33, 33, 36));
 
@@ -268,7 +276,7 @@ public class MainDashboard extends javax.swing.JFrame {
         jLabel6.setText("Manage Patient");
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/patient.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/receptionist/Appointment-22.png"))); // NOI18N
 
         jPanel6.setBackground(new java.awt.Color(33, 33, 36));
 
@@ -302,119 +310,6 @@ public class MainDashboard extends javax.swing.JFrame {
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-
-        ManageBooks_panel2.setBackground(new java.awt.Color(33, 33, 36));
-        ManageBooks_panel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        ManageBooks_panel2.setPreferredSize(new java.awt.Dimension(150, 45));
-        ManageBooks_panel2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ManageBooks_panel2MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ManageBooks_panel2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                ManageBooks_panel2MouseExited(evt);
-            }
-        });
-
-        jLabel10.setForeground(new java.awt.Color(0, 102, 255));
-        jLabel10.setText("Manage eye result");
-
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/eye search.png"))); // NOI18N
-
-        jPanel7.setBackground(new java.awt.Color(33, 33, 36));
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 4, Short.MAX_VALUE)
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout ManageBooks_panel2Layout = new javax.swing.GroupLayout(ManageBooks_panel2);
-        ManageBooks_panel2.setLayout(ManageBooks_panel2Layout);
-        ManageBooks_panel2Layout.setHorizontalGroup(
-            ManageBooks_panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ManageBooks_panel2Layout.createSequentialGroup()
-                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        ManageBooks_panel2Layout.setVerticalGroup(
-            ManageBooks_panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ManageBooks_panel2Layout.createSequentialGroup()
-                .addGap(9, 9, 9)
-                .addGroup(ManageBooks_panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        ManageBooks_panel3.setBackground(new java.awt.Color(33, 33, 36));
-        ManageBooks_panel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        ManageBooks_panel3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ManageBooks_panel3MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ManageBooks_panel3MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                ManageBooks_panel3MouseExited(evt);
-            }
-        });
-
-        jLabel12.setForeground(new java.awt.Color(0, 102, 255));
-        jLabel12.setText("Manage Diagnosis");
-
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/Diagnosis.png"))); // NOI18N
-
-        jPanel8.setBackground(new java.awt.Color(33, 33, 36));
-
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 4, Short.MAX_VALUE)
-        );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout ManageBooks_panel3Layout = new javax.swing.GroupLayout(ManageBooks_panel3);
-        ManageBooks_panel3.setLayout(ManageBooks_panel3Layout);
-        ManageBooks_panel3Layout.setHorizontalGroup(
-            ManageBooks_panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ManageBooks_panel3Layout.createSequentialGroup()
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        ManageBooks_panel3Layout.setVerticalGroup(
-            ManageBooks_panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ManageBooks_panel3Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addGroup(ManageBooks_panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(13, 13, 13))
-            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         ManageBooks_panel4.setBackground(new java.awt.Color(33, 33, 36));
@@ -516,14 +411,12 @@ public class MainDashboard extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(ManageBooks_panel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, Short.MAX_VALUE)
-                    .addComponent(ManageBooks_panel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, Short.MAX_VALUE)
-                    .addComponent(ManageBooks_panel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, Short.MAX_VALUE)
                     .addComponent(ManageBooks_panel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, Short.MAX_VALUE)
                     .addComponent(ManageBooks_panel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, Short.MAX_VALUE))
                 .addGap(14, 14, 14))
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -535,11 +428,7 @@ public class MainDashboard extends javax.swing.JFrame {
                 .addComponent(ManageBooks_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ManageBooks_panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ManageBooks_panel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ManageBooks_panel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 214, Short.MAX_VALUE)
                 .addComponent(ManageBooks_panel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14))
         );
@@ -608,6 +497,7 @@ public class MainDashboard extends javax.swing.JFrame {
 //     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
 //     example below->>>>
 //     changeView(new YourPanelName());
+        changeView(new ManageAppointments());
     }//GEN-LAST:event_ManageBooks_panel1MouseClicked
 
     private void ManageBooks_panel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel1MouseEntered
@@ -619,48 +509,6 @@ public class MainDashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
         panelToggleHover(false, ManageBooks_panel1, jPanel6);
     }//GEN-LAST:event_ManageBooks_panel1MouseExited
-
-    private void ManageBooks_panel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel2MouseClicked
-        panelToggleClick(ManageBooks_panel2, jPanel7);
-//      Button 3 in Dashboard
-//      මෙතැනදී තමයි ඔයාගේ panel එකට අදාල object එක හදන්න ඕන, 
-//      ඒක හදන්න ඕන පහත නිදසුනේ පෙනෙන පරිදි changeView කියන method එකට parameter සෙට් කරන තැනදී. 
-//     ( parameter සෙට් කරන තැන යනු method name එකේ වරහන් දෙක  ඇතුලතටයි ) 
-//     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
-//     example below->>>>
-//     changeView(new YourPanelName());
-    }//GEN-LAST:event_ManageBooks_panel2MouseClicked
-
-    private void ManageBooks_panel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel2MouseEntered
-        // TODO add your handling code here:
-        panelToggleHover(true, ManageBooks_panel2, jPanel7);
-    }//GEN-LAST:event_ManageBooks_panel2MouseEntered
-
-    private void ManageBooks_panel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel2MouseExited
-        // TODO add your handling code here:
-        panelToggleHover(false, ManageBooks_panel2, jPanel7);
-    }//GEN-LAST:event_ManageBooks_panel2MouseExited
-
-    private void ManageBooks_panel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel3MouseClicked
-        panelToggleClick(ManageBooks_panel3, jPanel8);
-//      Button 4 in Dashboard
-//      මෙතැනදී තමයි ඔයාගේ panel එකට අදාල object එක හදන්න ඕන, 
-//      ඒක හදන්න ඕන පහත නිදසුනේ පෙනෙන පරිදි changeView කියන method එකට parameter සෙට් කරන තැනදී. 
-//     ( parameter සෙට් කරන තැන යනු method name එකේ වරහන් දෙක  ඇතුලතටයි ) 
-//     එලෙස දැමු පසු එය click කරන විටදී  ඔයාගේ panel එක ගානට dashboard එකට වැටෙනවා. 
-//     example below->>>>
-//     changeView(new YourPanelName());
-    }//GEN-LAST:event_ManageBooks_panel3MouseClicked
-
-    private void ManageBooks_panel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel3MouseEntered
-        // TODO add your handling code here:
-        panelToggleHover(true, ManageBooks_panel3, jPanel8);
-    }//GEN-LAST:event_ManageBooks_panel3MouseEntered
-
-    private void ManageBooks_panel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel3MouseExited
-        // TODO add your handling code here:
-        panelToggleHover(false, ManageBooks_panel3, jPanel8);
-    }//GEN-LAST:event_ManageBooks_panel3MouseExited
 
     private void ManageBooks_panel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ManageBooks_panel4MouseClicked
         panelToggleClick(ManageBooks_panel4, jPanel9);
@@ -730,10 +578,6 @@ public class MainDashboard extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jLabel28MouseClicked
 
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel2MouseClicked
-
     /**
      * @param args the command line arguments
      */
@@ -757,7 +601,7 @@ public class MainDashboard extends javax.swing.JFrame {
 //        FlatMaterialDeepOceanIJTheme.setup();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                MainDashboard adminDashboard = new MainDashboard("200328712369", "fName", "lName");
+                ReceptionistDashboard adminDashboard = new ReceptionistDashboard("200328712369", "fName", "lName");
                 adminDashboard.setVisible(true);
             }
         });
@@ -766,14 +610,8 @@ public class MainDashboard extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel ManageBooks_panel;
     private javax.swing.JPanel ManageBooks_panel1;
-    private javax.swing.JPanel ManageBooks_panel2;
-    private javax.swing.JPanel ManageBooks_panel3;
     private javax.swing.JPanel ManageBooks_panel4;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
@@ -790,8 +628,6 @@ public class MainDashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     // End of variables declaration//GEN-END:variables
 }
