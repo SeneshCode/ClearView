@@ -820,8 +820,11 @@ public class GrnAndItems extends javax.swing.JPanel {
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         // add new frame
         
-        AddNewFrame anf = new AddNewFrame(InventoryDashboard.window,true);
+        AddNewFrame anf = new AddNewFrame(InventoryDashboard.window, true);
         anf.setVisible(true);
+        
+       
+        
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
