@@ -9,7 +9,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="2"/>
-    <Property name="title" type="java.lang.String" value="Schedule Time and Date"/>
+    <Property name="title" type="java.lang.String" value="Add Prescription"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -133,7 +133,7 @@
           <Font name="Segoe UI" size="18" style="1"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Schedule Time and Date"/>
+        <Property name="text" type="java.lang.String" value="Add Prescription"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">

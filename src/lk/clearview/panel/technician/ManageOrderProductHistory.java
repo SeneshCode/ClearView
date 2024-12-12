@@ -18,6 +18,12 @@ public class ManageOrderProductHistory extends javax.swing.JPanel {
      */
     public ManageOrderProductHistory() {
         initComponents();
+        init();
+    }
+    
+    private void init(){
+        datePicker1.setEditor(start_date);
+        datePicker2.setEditor(end_date);
     }
 
     /**
@@ -29,6 +35,8 @@ public class ManageOrderProductHistory extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        datePicker1 = new raven.datetime.component.date.DatePicker();
+        datePicker2 = new raven.datetime.component.date.DatePicker();
         jPanel5 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -38,10 +46,10 @@ public class ManageOrderProductHistory extends javax.swing.JPanel {
         jPanel3 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jTextField4 = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jTextField5 = new javax.swing.JTextField();
+        end_date = new javax.swing.JFormattedTextField();
+        start_date = new javax.swing.JFormattedTextField();
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lk/clearview/resources/technician/icons8-order-history-22.png"))); // NOI18N
@@ -98,9 +106,6 @@ public class ManageOrderProductHistory extends javax.swing.JPanel {
                 .addGap(25, 25, 25))
         );
 
-        jTextField4.setText("2024-01-01");
-        jTextField4.setBorder(jButton1.getBorder());
-
         jButton2.setBackground(new java.awt.Color(22, 163, 74));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Full Details");
@@ -114,8 +119,17 @@ public class ManageOrderProductHistory extends javax.swing.JPanel {
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("Print Report");
 
-        jTextField5.setText("2024-11-28");
-        jTextField5.setBorder(jButton1.getBorder());
+        end_date.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                end_dateActionPerformed(evt);
+            }
+        });
+
+        start_date.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                start_dateActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -124,12 +138,12 @@ public class ManageOrderProductHistory extends javax.swing.JPanel {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(start_date, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 329, Short.MAX_VALUE)
+                .addComponent(end_date, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton3)
                 .addGap(7, 7, 7)
@@ -149,8 +163,8 @@ public class ManageOrderProductHistory extends javax.swing.JPanel {
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(end_date, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(start_date, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -194,8 +208,19 @@ public class ManageOrderProductHistory extends javax.swing.JPanel {
         orderProductFullDetails.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void end_dateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_end_dateActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_end_dateActionPerformed
+
+    private void start_dateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_start_dateActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_start_dateActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private raven.datetime.component.date.DatePicker datePicker1;
+    private raven.datetime.component.date.DatePicker datePicker2;
+    private javax.swing.JFormattedTextField end_date;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -207,7 +232,6 @@ public class ManageOrderProductHistory extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
+    private javax.swing.JFormattedTextField start_date;
     // End of variables declaration//GEN-END:variables
 }

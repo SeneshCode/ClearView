@@ -59,11 +59,11 @@ public class AddPrescription extends javax.swing.JDialog {
         jTextField7 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Schedule Time and Date");
+        setTitle("Add Prescription");
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Schedule Time and Date");
+        jLabel1.setText("Add Prescription");
 
         jButton1.setBackground(new java.awt.Color(3, 96, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
