@@ -1,7 +1,10 @@
 # Clear View
 
 ## Dashboard of clear view 
+- **Dark Theme version**:
 ![Clear view Dashboard](dashboard_dark_theme.png)
+- **Light Theme version**:
+![Clear view Dashboard](dashboard_light_theme.png)
 
 ## Team Assignments
 
