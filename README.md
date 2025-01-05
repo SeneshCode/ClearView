@@ -1,8 +1,6 @@
 # Clear View
 
 ## Dashboard of clear view 
-
-## Dashboard of clear view 
 ![Clear view Dashboard]("dashboard_dark_theme.png")
 
 ## Team Assignments
