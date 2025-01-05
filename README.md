@@ -1,11 +1,5 @@
 # Clear View
 
-## Dashboard of clear view 
-- **Dark Theme version**:
-![Clear view Dashboard](dashboard_dark_theme.png)
-- **Light Theme version**:
-![Clear view Dashboard](dashboard_light_theme.png)
-
 ## Team Assignments
 
 - **Osini**: Inventory / Finance
@@ -27,10 +21,30 @@
 - Icon Site - [Icons](https://icons8.com/icons/set/icons)
 - SVG Site - [Storyset](https://storyset.com/)
 
+## Dashboard of clear view 
+- **Dark Theme version**:
+![Clear view Dashboard](dashboard_dark_theme.png)
+- **Light Theme version**:
+![Clear view Dashboard](dashboard_light_theme.png)
 
-## Dashboard Slide Bar Icon size : 
-  - width: 22 pixels
-  - height: 22 pixels
+
+## Dashboard Slide Bar Icon: 
+  - formet: svg
+  - quantity: 2 of different color
+  - color 1:
+    ```
+    #0360FF
+
+    ```
+  - color 2:
+    ```
+    #FFFFFF
+
+    ```
+  - lastly add file name to :
+      - dark svg : ```dark```
+      - light svg : ```light```
+    
 
 ## Color Theme : 
   - High priority: ( Green ) 
@@ -68,34 +82,34 @@
 ## Packages Names : 
   - Osini's package name 
 ```
-inventory 
+osini 
 ```
   - Thamodani's package name 
 ```
-dispensing
+thamodini
 ```
   - Senesh's package name   
 ```
-doctor
+senesh
 ```
   - Sheran's package name   
 ```
-technician
+sheran
 ```
   - Dhanushka's package name   
 ```
-receptionist
+dhanushka
 ```
   - Isira's package name
 ```
-admin
+isira
 ```
-  - Osini and Thamodani have 1 package that name  
+  - Isiri's package name
 ```
 finance
 ```
 
-
+( bellow code not use this version)
 ## Method of set dashboard names
  - we must call ```setNameofDashboards()``` method at constructor.
 ```java
