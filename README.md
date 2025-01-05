@@ -34,12 +34,10 @@
   - color 1:
     ```
     #0360FF
-
     ```
   - color 2:
     ```
     #FFFFFF
-
     ```
   - lastly add file name to :
       - dark svg : ```dark```
